@@ -221,7 +221,7 @@ namespace Couchbase.Extensions.Session.UnitTests
             var result = session.TryGetValue("Set_Tests", out actual);
 
             Assert.False(result);
-            Assert.Same(null, actual);
+            Assert.Null(actual);
         }
 
         [Fact]

@@ -337,7 +337,7 @@ namespace Couchbase.Extensions.Identity.Example.Controllers
 
             if (!user.TwoFactorEnabled)
             {
-                throw new ApplicationException($"Unexpected error occured disabling 2FA for user with ID '{user.Id}'.");
+                throw new ApplicationException($"Unexpected error occurred disabling 2FA for user with ID '{user.Id}'.");
             }
 
             return View(nameof(Disable2fa));

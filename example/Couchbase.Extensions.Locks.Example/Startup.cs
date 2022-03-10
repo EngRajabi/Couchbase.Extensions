@@ -32,9 +32,7 @@ namespace Couchbase.Extensions.Locks.Example
         {
             if (env.IsDevelopment())
             {
-                app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
-                app.UseDatabaseErrorPage();
             }
             else
             {

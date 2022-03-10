@@ -17,7 +17,7 @@ namespace Couchbase.Extensions.Caching.Internal
         {
             var bucket = await _bucketProvider.GetBucketAsync().ConfigureAwait(false);
 
-            return bucket.DefaultCollection();
+            return await bucket.DefaultCollectionAsync();
         }
     }
 }
